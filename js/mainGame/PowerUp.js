@@ -8,7 +8,7 @@ function PowerUp() {
   this.x;
   this.y;
   this.velX = 2;
-  this.velY = 2;
+  this.velY = 0;
   this.grounded = false;
   this.sX;
   this.sY = 0;

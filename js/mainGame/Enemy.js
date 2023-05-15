@@ -2,7 +2,7 @@ function Enemy() {
   let gameUI = GameUI.getInstance();
 
   let tickCounter = 0;
-  let maxTick = 10; 
+  let maxTick = 10;
 
   let element = new Image();
   element.src = 'images/enemies.png';
@@ -24,17 +24,17 @@ function Enemy() {
 
   let that = this;
 
-  this.goomba = function() {
+  this.goomba = function () {
     this.type = 20;
     that.sX = 0;
   };
 
-  this.draw = function() {
+  this.draw = function () {
     that.sX = that.width * that.frame;
     gameUI.draw(element, that.sX, that.sY, that.width, that.height, that.x, that.y, that.width, that.height);
   };
 
-  this.update = function() {
+  this.update = function () {
     let gravity = 0.2;
 
     if (that.grounded) {
@@ -42,14 +42,14 @@ function Enemy() {
     }
 
     if (that.state == 'dead') {
-      that.frame = 2; //squashed goomba
+      that.frame = 2;
 
       tickCounter++;
       if (tickCounter >= 60) {
         that.frame = 4;
       }
     } else if (that.state == 'deadFromBullet') {
-      //falling goomba
+
       that.frame = 3;
       that.velY += gravity;
       that.y += that.velY;

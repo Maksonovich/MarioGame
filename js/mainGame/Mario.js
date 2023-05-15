@@ -5,10 +5,10 @@ function Mario() {
   this.x;
   this.y;
   this.width = 32;
-  this.height = 54;
+  this.height = 44;
   this.speed = 3;
   this.velX = 0;
-  this.velY = 0;
+  this.velY = -2;
   this.jumping = false;
   this.grounded = false;
   this.invulnerable = false;

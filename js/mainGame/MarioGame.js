@@ -657,7 +657,7 @@ function MarioGame() {
       if (!mario.jumping && mario.grounded) {
         mario.jumping = true;
         mario.grounded = false;
-        mario.velY = -(mario.speed / 2 + 5.5);
+        mario.velY = -(mario.speed / 1.5 + 5.5);
 
         // mario sprite position
         if (mario.frame == 0 || mario.frame == 1) {
