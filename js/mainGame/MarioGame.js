@@ -445,7 +445,7 @@ function MarioGame() {
         //sound when flower appears
         gameSound.play('powerUpAppear');
       }
-
+      
       if (element.type == 2) {
         //Coin Box
         score.coinScore++;

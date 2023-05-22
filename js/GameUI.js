@@ -5,8 +5,6 @@ let GameUI = (function() {
     let canvas = document.getElementsByClassName('game-screen')[0];
     let ctx = canvas.getContext('2d');
 
-    // let that = this;
-
     this.setWidth = function(width) {
       canvas.width = width;
     };

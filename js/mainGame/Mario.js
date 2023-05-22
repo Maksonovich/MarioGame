@@ -8,7 +8,7 @@ function Mario() {
   this.height = 44;
   this.speed = 3;
   this.velX = 0;
-  this.velY = -2;
+  this.velY = 0;
   this.jumping = false;
   this.grounded = false;
   this.invulnerable = false;

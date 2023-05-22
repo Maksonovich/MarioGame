@@ -11,7 +11,7 @@ function Enemy() {
   this.y;
   this.velX = 1;
   this.velY = 0;
-  this.grounded = false;
+  this.grounded = true;
   this.type;
   this.state;
 
